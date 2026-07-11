@@ -1,0 +1,64 @@
+/* ======================================================
+   ORGANIC LUXURY DESIGN SYSTEM
+   Gabi Favoretto
+====================================================== */
+
+/* ===========================
+   COLORS
+=========================== */
+
+:root{
+
+    /* Background */
+
+    --color-background: #F8F4EF;
+    --color-surface: #FFFFFF;
+    --color-section: #EFE6DC;
+
+    /* Primary */
+
+    --color-primary: #B88968;
+    --color-primary-dark: #9D7256;
+    --color-primary-light: #D8B7A0;
+
+    /* Text */
+
+    --color-title: #4B3B32;
+    --color-text: #78695E;
+    --color-text-light: #9A8C80;
+
+    /* Borders */
+
+    --color-border: #E5D8CC;
+
+    /* Success */
+
+    --color-success: #8A9A5B;
+
+    /* Shadows */
+
+    --shadow-sm:
+    0 8px 20px rgba(0,0,0,.04);
+
+    --shadow-md:
+    0 20px 50px rgba(0,0,0,.06);
+
+    --shadow-lg:
+    0 30px 80px rgba(0,0,0,.08);
+
+    /* Radius */
+
+    --radius-sm:12px;
+    --radius-md:20px;
+    --radius-lg:30px;
+    --radius-pill:999px;
+
+    /* Transition */
+
+    --transition:.35s ease;
+
+    /* Container */
+
+    --container:1280px;
+
+}

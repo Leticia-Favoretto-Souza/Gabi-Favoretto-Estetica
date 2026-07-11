@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;700&display=swap');
+
+/* ======================================================
+   RESET
+====================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Lato',sans-serif;
+
+    background:var(--color-background);
+
+    color:var(--color-text);
+
+    overflow-x:hidden;
+
+}
+
+/* ======================================================
+   TYPOGRAPHY
+====================================================== */
+
+h1,h2,h3,h4,h5{
+
+    font-family:'Playfair Display',serif;
+
+    color:var(--color-title);
+
+    line-height:1.2;
+
+}
+
+h1{
+
+    font-size:4rem;
+    font-weight:600;
+
+}
+
+h2{
+
+    font-size:3rem;
+
+}
+
+h3{
+
+    font-size:2rem;
+
+}
+
+p{
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
