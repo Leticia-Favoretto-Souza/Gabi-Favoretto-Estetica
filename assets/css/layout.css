@@ -435,3 +435,38 @@ SMALL CARD
     font-family:'Playfair Display', serif;
 
 }
+        body { background-color: #faf6f0; } /* Fundo da página inteira neste tom bege */
+        
+        
+        /* Estilo Menu Editorial */
+        .editorial-menu-container { padding: 40px 0 80px 0; }
+        .sticky-image-wrapper { position: sticky; top: 120px; }
+        .sticky-image-wrapper img { width: 100%; height: 75vh; object-fit: cover; border-radius: 16px; border: 1px solid #e9ecef; }
+        
+        .menu-item { border-bottom: 1px solid #e9ecef; padding: 40px 0; }
+        .menu-item:first-child { padding-top: 0; }
+        .menu-item:last-child { border-bottom: none; padding-bottom: 0; }
+        
+        .menu-header { margin-bottom: 25px; }
+        .menu-title { font-family: 'Playfair Display', serif; color: #4a3c31; font-size: 2.2rem; font-weight: bold; margin-bottom: 5px; }
+        .menu-subtitle { color: #8c7a6b; font-size: 0.95rem; font-style: italic; font-family: 'Playfair Display', serif; }
+        .menu-desc { color: #6c757d; font-size: 0.95rem; line-height: 1.6; margin-top: 15px; }
+        
+        /* Linhas de Preço com Pontilhados */
+        .price-line { display: flex; align-items: baseline; margin-bottom: 12px; font-size: 1rem; }
+        .price-name { font-weight: 600; color: #4a3c31; display: flex; align-items: center; gap: 8px; }
+        .price-dots { flex-grow: 1; border-bottom: 2px dotted #d6caba; margin: 0 15px; opacity: 0.6; }
+        .price-value { font-weight: 700; color: #4a3c31; font-size: 1.1rem; }
+        
+        /* Destaque para Titânio */
+        .price-line.highlight .price-name { color: #8c7a6b; }
+        .price-line.highlight .price-value { color: #8c7a6b; }
+        
+        .extra-price { font-size: 0.9rem; color: #6c757d; display: flex; align-items: center; margin-top: 15px; padding-top: 15px; border-top: 1px dashed #e9ecef; }
+        .extra-price i { color: #8c7a6b; margin-right: 8px; }
+
+        .btn-link-custom { display: inline-block; margin-top: 20px; color: #4a3c31; font-weight: 600; text-decoration: none; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.85rem; border-bottom: 2px solid #8c7a6b; padding-bottom: 3px; transition: all 0.3s ease; }
+        .btn-link-custom:hover { color: #8c7a6b; border-color: #4a3c31; letter-spacing: 2px; }
+
+        .piercing-info-section { background: #fff; padding: 80px 0; border-top: 1px solid #e9ecef; border-bottom: 1px solid #e9ecef; }
+        .biosseguranca-item { display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px; }
