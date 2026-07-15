@@ -1,0 +1,140 @@
+/*=========================================
+AJUSTES PARA CELULARES E TABLETS
+=========================================*/
+
+@media (max-width: 991px) {
+    /* 1. Melhora do Hero */
+    .hero {
+        text-align: center;
+        padding-top: 100px; /* Reduzi o padding de 150px para 100px */
+        padding-bottom: 50px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem; /* Títulos menores no mobile */
+        line-height: 1.2;
+    }
+
+    .hero p {
+        margin: 20px auto;
+        max-width: 90%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-direction: column; /* Botões um embaixo do outro no mobile */
+        gap: 15px;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+    /* 2. Ajuste de Espaçamento Geral */
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    /* 3. Evita que o site "vaze" para o lado no celular */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* 4. Ajuste na Navbar Móvel */
+    .navbar-collapse {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        margin-top: 10px;
+    }
+}
+
+/* Ajuste fino para telas muito pequenas */
+@media (max-width: 576px) {
+    .hero h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+}
+
+/*=========================================
+AJUSTES PARA DESKTOP
+=========================================*/
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        animation: fadeDropdown .25s ease;
+    }
+}
+
+/*=========================================
+AJUSTES PARA CELULARES E TABLETS
+=========================================*/
+
+/* Variáveis para facilitar o ajuste futuro */
+:root {
+    --color-background: #ffffff; /* Ajuste para suas cores reais */
+    --color-text: #555555;
+    --color-title: #333333;
+}
+
+@media (max-width: 991px) {
+    /* TYPOGRAPHY RESPONSIVA */
+    h1 {
+        /* O clamp garante: mínimo de 2.2rem, ideal de 5vw, máximo de 4rem */
+        font-size: clamp(2.2rem, 8vw, 4rem); 
+    }
+
+    h2 {
+        font-size: clamp(1.8rem, 6vw, 3rem);
+    }
+
+    h3 {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+
+    p {
+        font-size: 1rem; /* Um pouco menor para facilitar a leitura */
+        line-height: 1.6;
+    }
+
+    /* Ajuste de Hero */
+    .hero {
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Ajustes para telas bem pequenas (celulares antigos) */
+@media (max-width: 576px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.6rem; }
+    
+    .section-padding {
+        padding: 40px 0;
+    }
+}
+
+/*=========================================
+AJUSTES PARA DESKTOP
+=========================================*/
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        animation: fadeDropdown .25s ease;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Garante que o nome fique em uma linha só no menu */
+    }
+}

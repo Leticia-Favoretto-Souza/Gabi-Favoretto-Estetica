@@ -25,11 +25,8 @@ async function loadComponent(id, url) {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-
-    await loadComponent("navbar", "./components/navbar.html");
-
-    await loadComponent("footer", "./components/footer.html");
-
-    await loadComponent("cta", "./components/cta.html");
-
+    // Note que removi o ponto antes da barra
+    await loadComponent("navbar", "/components/navbar.html");
+    await loadComponent("footer", "/components/footer.html");
+    await loadComponent("cta", "/components/cta.html");
 });

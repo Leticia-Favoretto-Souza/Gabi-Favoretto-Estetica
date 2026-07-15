@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa Day | Gabi Favoretto</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS Externos do seu projeto -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <style>
+        body { background-color: #faf6f0; }
+        
+        
+        /* Estilos específicos para a página de Spa */
+        .spa-container { background-color: #fff; border-radius: 24px; border: 1px solid #e9ecef; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.03); margin-bottom: 80px; }
+        
+        .spa-image-wrapper { height: 100%; min-height: 400px; position: relative; }
+        .spa-image-wrapper img { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; }
+        
+        .spa-content { padding: 60px 50px; }
+        @media (max-width: 991px) { .spa-content { padding: 40px 30px; } .spa-image-wrapper { min-height: 300px; } }
+        
+        .spa-list { list-style: none; padding: 0; margin: 30px 0; }
+        .spa-list li { display: flex; align-items: center; gap: 12px; margin-bottom: 15px; color: #4a3c31; font-weight: 500; font-size: 1.05rem; }
+        .spa-list li i { color: #8c7a6b; font-size: 1.2rem; }
+
+        .bonus-box { background-color: #faf6f0; border: 1px dashed #d6caba; border-radius: 12px; padding: 20px; margin-bottom: 30px; display: flex; align-items: center; gap: 15px; }
+        .bonus-box i { font-size: 2rem; color: #8c7a6b; }
+        .bonus-box div p { margin: 0; color: #4a3c31; font-size: 0.95rem; }
+        .bonus-box div strong { font-family: 'Playfair Display', serif; color: #4a3c31; font-size: 1.2rem; }
+
+        .price-display { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #8c7a6b; font-weight: bold; margin-bottom: 20px; }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <!-- HEADER INTERNO -->
+    <section class="pt-5 pb-4 text-center mt-5">
+        <div class="container mt-5">
+            <span class="section-tag border-0" style="background-color: #f0e6dd;">Pausa Merecida</span>
+            <h1 class="mb-3" style="font-family: 'Playfair Display', serif; color: #4a3c31; font-size: 3.5rem;">Spa Day</h1>
+            <p class="lead text-muted" style="max-width: 700px; margin: 0 auto; line-height: 1.8;">
+                Permita-se desacelerar e viver uma experiência de puro cuidado e bem-estar. O Spa Day foi criado para proporcionar relaxamento profundo, renovação da pele e uma pausa merecida da correria do dia a dia.
+            </p>
+        </div>
+    </section>
+
+    <!-- DETALHES DO SPA DAY -->
+    <section class="py-4">
+        <div class="container">
+            <div class="spa-container">
+                <div class="row g-0 align-items-stretch">
+                    
+                    <!-- Imagem Esquerda -->
+                    <div class="col-lg-5">
+                        <div class="spa-image-wrapper">
+                            <!-- Link de imagem do Unsplash (tema spa/relaxamento) -->
+                            <img src="assets/images/home/spa.jpg" alt="Experiência Spa Day">
+                        </div>
+                    </div>
+
+                    <!-- Conteúdo Direita -->
+                    <div class="col-lg-7">
+                        <div class="spa-content">
+                            <h2 style="font-family: 'Playfair Display', serif; color: #4a3c31; margin-bottom: 20px;">
+                                O seu momento de autocuidado
+                            </h2>
+                            
+                            <p style="color: #6c757d; font-size: 1.05rem; line-height: 1.7;">
+                                Nosso protocolo foi cuidadosamente pensado para promover o equilíbrio perfeito entre corpo e mente. Desfrute de uma sessão completa que inclui:
+                            </p>
+
+                            <ul class="spa-list">
+                                <li>
+                                    <i class="bi bi-flower1"></i> Escalda-pés com esfoliação
+                                </li>
+                                <li>
+                                    <i class="bi bi-droplet"></i> Revitalização Facial
+                                </li>
+                                <li>
+                                    <i class="bi bi-stars"></i> Massagem corporal relaxante
+                                </li>
+                                <li>
+                                    <i class="bi bi-yin-yang"></i> Massagem facial e epicrânea
+                                </li>
+                            </ul>
+
+                            <div class="bonus-box">
+                                <i class="bi bi-cup-hot"></i>
+                                <div>
+                                    <strong>Bônus Especial</strong>
+                                    <p>Como um carinho adicional, a experiência inclui chá calmante e aromaterapia, tornando cada momento ainda mais acolhedor.</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <div class="price-display">
+                                    <span style="font-size: 1rem; color: #6c757d; font-family: 'Inter', sans-serif; font-weight: normal; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: -10px;">Valor Total</span>
+                                    R$ 270,00
+                                </div>
+                                <a href="https://wa.me/5519996618380?text=Olá!%20Gostaria%20de%20agendar%20um%20Spa%20Day." target="_blank" class="btn-primary-custom">
+                                    Agendar meu Spa Day
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>    
+
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

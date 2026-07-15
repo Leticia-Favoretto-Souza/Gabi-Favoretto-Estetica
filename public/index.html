@@ -1,89 +1,405 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="pt-BR">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.16.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.16.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.16.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.16.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.16.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.16.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.16.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.16.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.16.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.16.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <title>Gabi Favoretto | Estética e Bem-estar</title>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <div id="navbar"></div>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <span class="hero-subtitle">
+                        Estética • Bem-estar • Body Piercing
+                    </span>
+
+                    <h1>
+                        Transformando autoestima através do cuidado.
+                    </h1>
+
+                    <p>
+                        Atendimento personalizado para realçar sua beleza,
+                        promover bem-estar e fortalecer sua confiança.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="https://wa.me/5519996618380" class="btn-primary-custom" target="_blank" rel="noopener noreferrer">
+                            Agendar horário
+                        </a>
+
+                        <a href="#especialidades" class="btn-outline-custom">
+                            Conhecer serviços
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="hero-image">
+
+                        <img src="assets/images/home/hero.jpg" class="img-fluid"
+                            alt="Gabi Favoretto">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ESPECIALIDADES -->
+
+    <section id="especialidades" class="section-padding bg-light">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="section-tag">
+                    Especialidades
+                </span>
+
+                <h2>
+                    Tratamentos desenvolvidos para você
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="service-card">
+
+                        <img src="assets/images/home/facial.jpg" class="img-fluid">
+
+                        <div class="service-content">
+
+                            <h4>Estética Facial</h4>
+
+                            <p>
+                                Limpeza de pele, revitalização,
+                                microagulhamento e muito mais.
+                            </p>
+
+                            <a href="facial.html">
+                                Saiba mais →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="service-card">
+
+                        <img src="assets/images/home/corporal.jpg" class="img-fluid">
+
+                        <div class="service-content">
+
+                            <h4>Estética Corporal</h4>
+
+                            <p>
+                                Drenagem, massagens e protocolos
+                                personalizados.
+                            </p>
+
+                            <a href="corporal.html">
+                                Saiba mais →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="service-card">
+
+                        <img src="assets/images/home/piercing.jpg" class="img-fluid">
+
+                        <div class="service-content">
+
+                            <h4>Body Piercing</h4>
+
+                            <p>
+                                Técnica, segurança e biossegurança
+                                em cada procedimento.
+                            </p>
+
+                            <a href="body-piercing.html">
+                                Saiba mais →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SPA DAY -->
+
+    <section class="section-padding">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <img src="assets/images/home/spa.jpg"
+                        class="img-fluid rounded-4 shadow">
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <span class="section-tag">
+                        Spa Day
+                    </span>
+
+                    <h2>
+                        Uma experiência completa de autocuidado
+                    </h2>
+
+                    <ul class="spa-list">
+
+                        <li>✓ Escalda-pés com esfoliação</li>
+                        <li>✓ Revitalização Facial</li>
+                        <li>✓ Massagem corporal relaxante</li>
+                        <li>✓ Massagem facial e epicrânea</li>
+
+                    </ul>
+
+                    <a href="spa-day.html"
+                        class="btn-primary-custom">
+
+                        Quero conhecer
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- NOSSO ESPAÇO / AMBIENTE -->
+    <section class="section-padding py-5" style="background-color: #faf6f0;">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                
+                <!-- COLUNA DA IMAGEM -->
+                <div class="col-lg-6 order-2 order-lg-2">
+                    <div class="position-relative mt-4 mt-lg-0">
+                        <!-- Imagem principal (Substitua o link do src pela foto real da sala dela) -->
+                        <img src="assets/images/home/ambiente.jpg" 
+                            alt="Nosso Ambiente Aconchegante" 
+                            class="img-fluid rounded-4 shadow-sm w-100 position-relative z-1" 
+                            style="object-fit: cover; height: 650px;">
+                    </div>
+                </div>
+
+                <!-- COLUNA DO TEXTO -->
+                <div class="col-lg-6 order-1 order-lg-1 px-lg-5">
+                    <span class="section-tag mb-3">Nosso Espaço</span>
+                    
+                    <h2 class="mb-4" style="font-family: 'Playfair Display', serif; color: #4a3c31; font-size: 2.5rem;">
+                        Um refúgio para o seu bem-estar
+                    </h2>
+                    
+                    <p class="lead mb-4" style="color: #6c757d; font-size: 1.1rem; line-height: 1.8;">
+                        Cada detalhe do nosso estúdio foi cuidadosamente pensado para oferecer a você uma experiência única de acolhimento e tranquilidade.
+                    </p>
+                    
+                    <p style="color: #6c757d; line-height: 1.7; margin-bottom: 35px;">
+                        Criamos um ambiente seguro, íntimo e aconchegante, preparado especialmente para que você possa se desconectar da correria da rotina. Aqui, priorizamos o seu relaxamento desde o primeiro momento, garantindo que o seu tempo conosco seja uma verdadeira pausa revigorante, focada exclusivamente no seu autocuidado.
+                    </p>
+                    
+                    <div class="d-flex align-items-center gap-3">
+                        <a
+                            href="https://wa.me/5519996618380"
+                            class="btn-primary-custom"
+                            target="_blank" rel="noopener noreferrer">
+
+                            Quero conhecer
+
+                        </a>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   <!-- DIFERENCIAIS -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-tag">
+                    Diferenciais
+                </span>
+                <h2>
+                    Atendimento pensado para você
+                </h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="feature-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-hover">
+                        <i class="bi-person-hearts" style="font-size: 2.5rem; color: #8c7a6b;"></i>
+                        <h5 style="font-family: 'Playfair Display', serif; color: #4a3c31; font-weight: bold;">Humanizado</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="feature-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-hover">
+                        <i class="bi bi-mortarboard" style="font-size: 2.5rem; color: #8c7a6b;"></i>
+                        <h5 style="font-family: 'Playfair Display', serif; color: #4a3c31; font-weight: bold;">Especialização</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="feature-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-hover">
+                        <i class="bi bi-stars mb-3 d-block" style="font-size: 2.5rem; color: #8c7a6b;"></i>
+                        <h5 style="font-family: 'Playfair Display', serif; color: #4a3c31; font-weight: bold;">Protocolos Personalizados</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="feature-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-hover">
+                        <i class="bi bi-shield-check mb-3 d-block" style="font-size: 2.5rem; color: #8c7a6b;"></i>
+                        <h5 style="font-family: 'Playfair Display', serif; color: #4a3c31; font-weight: bold;">Biossegurança</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="section-padding py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-tag">Passo a Passo</span>
+                <h2 >
+                    Como funciona
+                </h2>
+            </div>
+
+            <div class="row text-center position-relative g-4">
+                
+                <!-- Linha decorativa que conecta os passos (opcional, só aparece no desktop) -->
+                <div class="d-none d-md-block position-absolute top-50 start-50 translate-middle w-75" style="height: 1px; border-top: 2px dashed #d6caba; z-index: 0;"></div>
+
+                <div class="col-md-3 position-relative z-1">
+                    <div class="bg-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 60px; height: 60px; border: 2px solid #8c7a6b;">
+                        <h3>1</h3>
+                    </div>
+                    <p style="color: #4a3c31; font-weight: 500;">Escolha seu procedimento</p>
+                </div>
+
+                <div class="col-md-3 position-relative z-1">
+                    <div class="bg-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 60px; height: 60px; border: 2px solid #8c7a6b;">
+                        <h3>2</h3>
+                    </div>
+                    <p style="color: #4a3c31; font-weight: 500;">Agende pelo WhatsApp</p>
+                </div>
+
+                <div class="col-md-3 position-relative z-1">
+                    <div class="bg-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 60px; height: 60px; border: 2px solid #8c7a6b;">
+                        <h3>3</h3>
+                    </div>
+                    <p style="color: #4a3c31; font-weight: 500;">Avaliação personalizada</p>
+                </div>
+
+                <div class="col-md-3 position-relative z-1">
+                    <div class="bg-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 60px; height: 60px; border: 2px solid #8c7a6b;">
+                        <h3>4</h3>
+                    </div>
+                    <p style="color: #4a3c31; font-weight: 500;">Seu momento de autocuidado</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+
+    <section class="cta-section">
+
+        <div class="container text-center">
+
+            <h2>
+                Seu momento de autocuidado começa aqui
+            </h2>
+
+            <p>
+                Agende seu horário e viva uma experiência única.
+            </p>
+
+            <a href="https://wa.me/5519996618380" class="btn-primary-custom" target="_blank" rel="noopener noreferrer">
+                Agendar agora
+            </a>
+
+        </div>
+
+    </section>
+
+    <div id="footer"></div>    
+
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
 </html>
